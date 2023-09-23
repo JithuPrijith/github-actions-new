@@ -4,16 +4,20 @@ on:
     types: [hello]
 
   push:
+    branches:
+      - "master"
+      - "feature/*"
+      - "faeture/**"
  
     
  # schedule:
     #- cron: "0/5 * * * *"
-  pull_request:
-    types:
-      - "closed"
-      - "opened"
-      - "assigned"
-      - "reopened"
+ # pull_request:
+  #  types:
+   #   - "closed"
+   #   - "opened"
+   #   - "assigned"
+   #   - "reopened"
 
 jobs:
   run-github-actions:
