@@ -13,6 +13,7 @@ on:
     paths:
       - "**.js"
       - "!filename.js"
+      - "**.yml"
  
     
  # schedule:
