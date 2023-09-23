@@ -5,9 +5,14 @@ on:
 
   push:
     branches:
-      - "!master"
+      - "master"
       - "feature/*"
       - "faeture/**"
+    tags:
+      - "v1.*"
+    paths:
+      - "**.js"
+      - "!filename.js"
  
     
  # schedule:
