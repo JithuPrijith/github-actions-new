@@ -1,5 +1,12 @@
 name: Actions worlflow
-on: [push,pull_request]
+on: 
+  push:
+  pull_request:
+    types:
+      - "closed"
+      - "opened"
+      - "assigned"
+      - "reopened"
 
 jobs:
   run-github-actions:
