@@ -4,8 +4,8 @@ on:
     types: [hello]
 
   push:
-    branches-ignore:
-      - "master"
+    branches:
+      - "!master"
       - "feature/*"
       - "faeture/**"
  
